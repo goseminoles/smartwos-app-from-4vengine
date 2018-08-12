@@ -234,44 +234,48 @@
 		A0868AE91F4D9317002B1D24 /* UserDetails */ = {
 			isa = PBXGroup;
 			children = (
-				A0868AEA1F4D9317002B1D24 /* View */,
-				A0868AEB1F4D9317002B1D24 /* ViewFactory */,
-				A0868AED1F4D9317002B1D24 /* ViewModel */,
-				A0868AEF1F4D9317002B1D24 /* ViewPresenter */,
+				A0868AEA1F4D9317002B1D24 /* Views */,
+				A0868AEB1F4D9317002B1D24 /* ViewFactories */,
+				A0868AED1F4D9317002B1D24 /* ViewModels */,
+				A0868AEF1F4D9317002B1D24 /* ViewPresenters */,
 			);
 			path = UserDetails;
 			sourceTree = "<group>";
 		};
-		A0868AEA1F4D9317002B1D24 /* View */ = {
+		A0868AEA1F4D9317002B1D24 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				A0868AF41F4D939C002B1D24 /* UserDetailsViewController.swift */,
 				A0868AF51F4D939C002B1D24 /* UserDetailsViewController.xib */,
 			);
+			name = Views;
 			path = View;
 			sourceTree = "<group>";
 		};
-		A0868AEB1F4D9317002B1D24 /* ViewFactory */ = {
+		A0868AEB1F4D9317002B1D24 /* ViewFactories */ = {
 			isa = PBXGroup;
 			children = (
 				A0868AEC1F4D9317002B1D24 /* UserDetailsViewFactory.swift */,
 			);
+			name = ViewFactories;
 			path = ViewFactory;
 			sourceTree = "<group>";
 		};
-		A0868AED1F4D9317002B1D24 /* ViewModel */ = {
+		A0868AED1F4D9317002B1D24 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
 				A0868AEE1F4D9317002B1D24 /* UserDetailsViewModel.swift */,
 			);
+			name = ViewModels;
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		A0868AEF1F4D9317002B1D24 /* ViewPresenter */ = {
+		A0868AEF1F4D9317002B1D24 /* ViewPresenters */ = {
 			isa = PBXGroup;
 			children = (
 				A0868AF01F4D9317002B1D24 /* UserDetailsViewPresenter.swift */,
 			);
+			name = ViewPresenters;
 			path = ViewPresenter;
 			sourceTree = "<group>";
 		};
