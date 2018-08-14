@@ -29,24 +29,32 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow?
-    var mainRouter: Router?
+  var window: UIWindow?
+  var mainRouter: Router?
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
-        let rootViewController = UIViewController()
-        
-        window = UIWindow()
-        window?.rootViewController = rootViewController
-        
-        let usersRouter = UsersRouter(parentViewController: rootViewController)
-        usersRouter.showInitial()
-        
-        window?.makeKeyAndVisible()
-        
-        mainRouter = usersRouter
-        
-        return true
-    }
+//        let rootViewController = UIViewController()
+//
+//        window = UIWindow()
+//        window?.rootViewController = rootViewController
+//
+//        let usersRouter = UsersRouter(parentViewController: rootViewController)
+//        usersRouter.showInitial()
+//
+//        window?.makeKeyAndVisible()
+//
+//        mainRouter = usersRouter
+
+    window = UIWindow(frame: UIScreen.main.bounds)
+    let layout = UICollectionViewFlowLayout()
+    let mainViewController = MainViewController(collectionViewLayout: layout)
+
+    let rootViewController = UINavigationController(rootViewController: mainViewController)
+    window?.rootViewController = rootViewController
+    window?.makeKeyAndVisible()
+
+    return true
+  }
 }
 

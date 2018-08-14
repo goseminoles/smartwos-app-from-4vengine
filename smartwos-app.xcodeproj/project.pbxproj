@@ -32,6 +32,8 @@
 		A0868AF71F4D939C002B1D24 /* UserDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0868AF51F4D939C002B1D24 /* UserDetailsViewController.xib */; };
 		A9E42D811F4E1FEB00E0DAF5 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E42D801F4E1FEB00E0DAF5 /* Router.swift */; };
 		D1F8A77A216CECC927864D90 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A044E62D5618B6C594F1 /* HTTPClient.swift */; };
+		D1F8A93C6A08FF1EAD1F8577 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A5621EA1479C9AFFDDF7 /* MainViewController.swift */; };
+		D1F8A97059A29E215E0BB345 /* UIViewExtresion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A2413AC98CC3ABD2D6E4 /* UIViewExtresion.swift */; };
 		D1F8A978F041841CE286BD72 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8AC8063DA6EF92D29DF38 /* Models.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +66,8 @@
 		A0868AF51F4D939C002B1D24 /* UserDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserDetailsViewController.xib; sourceTree = "<group>"; };
 		A9E42D801F4E1FEB00E0DAF5 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		D1F8A044E62D5618B6C594F1 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		D1F8A2413AC98CC3ABD2D6E4 /* UIViewExtresion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtresion.swift; sourceTree = "<group>"; };
+		D1F8A5621EA1479C9AFFDDF7 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D1F8AC8063DA6EF92D29DF38 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		EBB73F0BC33BE0431F02396C /* Pods-smartwos-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartwos-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smartwos-app/Pods-smartwos-app.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,6 +121,7 @@
 				A0868AE31F4D88E1002B1D24 /* Models */,
 				A0868AC11F4D6F29002B1D24 /* Stories */,
 				D1F8A6B0F0104E8FFFBA6C48 /* Clients */,
+				D1F8AB51C4FA51FD9225B05B /* Main */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -209,6 +214,7 @@
 			children = (
 				A0868AD61F4D733F002B1D24 /* UIView.swift */,
 				A0868AD41F4D7316002B1D24 /* UIViewControllerExtension.swift */,
+				D1F8A2413AC98CC3ABD2D6E4 /* UIViewExtresion.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -288,12 +294,36 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D1F8A45E5CC0BDFA8FFF9154 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D1F8A5CAD53D5119141E9C54 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D1F8A5621EA1479C9AFFDDF7 /* MainViewController.swift */,
+				D1F8A45E5CC0BDFA8FFF9154 /* Views */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		D1F8A6B0F0104E8FFFBA6C48 /* Clients */ = {
 			isa = PBXGroup;
 			children = (
 				D1F8A044E62D5618B6C594F1 /* HTTPClient.swift */,
 			);
 			path = Clients;
+			sourceTree = "<group>";
+		};
+		D1F8AB51C4FA51FD9225B05B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D1F8A5CAD53D5119141E9C54 /* ViewControllers */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -445,6 +475,8 @@
 				A0868AC51F4D6F92002B1D24 /* UsersRouter.swift in Sources */,
 				D1F8A978F041841CE286BD72 /* Models.swift in Sources */,
 				D1F8A77A216CECC927864D90 /* HTTPClient.swift in Sources */,
+				D1F8A93C6A08FF1EAD1F8577 /* MainViewController.swift in Sources */,
+				D1F8A97059A29E215E0BB345 /* UIViewExtresion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
