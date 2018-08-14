@@ -48,6 +48,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     window = UIWindow(frame: UIScreen.main.bounds)
     let layout = UICollectionViewFlowLayout()
+    layout.minimumInteritemSpacing = 32
+    layout.minimumLineSpacing = 32
+
     let mainViewController = MainViewController(collectionViewLayout: layout)
 
     let rootViewController = UINavigationController(rootViewController: mainViewController)

@@ -24,6 +24,8 @@ class MainViewController: UICollectionViewController, UICollectionViewDelegateFl
     Team(image: "ship", name: "Final Mile"),
     Team(image: "receive", name: "Weight"),
     Team(image: "pick", name: "Pickup"),
+    Team(image: "ship", name: "Final Mile"),
+    Team(image: "receive", name: "Weight"),
   ]
 
   override func viewDidLoad() {
