@@ -39,7 +39,7 @@ protocol UserDetailsNavigationDelegate: class {
 final class UsersRouter {
 
 	// Parent view controller to add the components
-    fileprivate let parentViewController: UIViewController
+    fileprivate weak var parentViewController: UIViewController?
 
 	// Dictionary of presenters used
     fileprivate var presenters = [String: ViewPresenter]()
@@ -53,7 +53,7 @@ extension UsersRouter: Router {
 	// Shows first component, the users list
 	func showInitial() {
 		let usersListPresenter = UsersListViewPresenter(navigationDelegate: self)
-		usersListPresenter.present(in: parentViewController)
+		usersListPresenter.present(in: parentViewController!)
 
 		presenters["UsersList"] = usersListPresenter
 	}
@@ -76,7 +76,7 @@ extension UsersRouter: Router {
 extension UsersRouter: UsersListNavigationDelegate {
     func usersListSelected(for user: Models.User) {
         let userDetailsPresenter = UserDetailsViewPresenter(user: user, navigationDelegate: self)
-        userDetailsPresenter.present(in: parentViewController)
+        userDetailsPresenter.present(in: parentViewController!)
         
         presenters["UserDetails"] = userDetailsPresenter
     }

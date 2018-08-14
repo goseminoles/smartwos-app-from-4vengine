@@ -30,7 +30,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
-  var mainRouter: Router?
+//  var mainRouter: Router?
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
@@ -53,7 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let rootViewController = UINavigationController(rootViewController: mainViewController)
     window?.rootViewController = rootViewController
     window?.makeKeyAndVisible()
-
+//
     return true
   }
 }

@@ -636,7 +636,7 @@
 				A0868AAF1F4D6B93002B1D24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		A0868AB01F4D6B93002B1D24 /* Build configuration list for PBXNativeTarget "smartwos-app" */ = {
 			isa = XCConfigurationList;
@@ -645,7 +645,7 @@
 				A0868AB21F4D6B93002B1D24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

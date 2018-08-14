@@ -77,7 +77,6 @@ class UsersListTableViewController: UITableViewController {
 		viewModel.userDetailsSelected(at: indexPath)
 	}
 }
-
 extension UsersListTableViewController: UsersListViewModelDelegate {
 	// Method called by View Model when the user data is changed
 	func usersListUpdated() {

@@ -7,6 +7,8 @@ import UIKit
 
 class MainViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
+  var mainRouter: Router?
+
   let cellId = "cellId"
   let teams = [
     Team(image: "label", name: "Label"),
@@ -75,7 +77,8 @@ class MainViewController: UICollectionViewController, UICollectionViewDelegateFl
       return
     }
 
-    print("Got clicked on cell name: \(name)!")
+    _ = launchStory(for: name)
+
   }
 
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -96,6 +99,27 @@ class MainViewController: UICollectionViewController, UICollectionViewDelegateFl
     }))
     self.present(alert, animated: true, completion: nil)
   }
+
+  func launchStory(for storyName: String) -> Bool {
+
+//    // TODO: delete the following statement
+//    print("Got clicked on cell name: \(operationName)!")
+//
+//    let usersRouter = UsersRouter(parentViewController: self)
+//    usersRouter.showInitial()
+//    mainRouter = usersRouter
+
+
+    let alert = UIAlertController(title: "囧", message: "This story has NOT implement yet^_^",
+        preferredStyle: .alert)
+    alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Will Do Soon"), style:
+    .default, handler: { _ in
+      NSLog("TODO: implement \(storyName)")
+    }))
+    self.present(alert, animated: true, completion: nil)
+    return true
+  }
+
 
 }
 
