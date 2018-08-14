@@ -1,39 +1,47 @@
-//
-//  UIViewControllerExtension.swift
-//
-//  4VEngine
-//
-//  Copyright (c) 2017 Marco Santarossa (https://marcosantadev.com)
-//
-//  Permission is hereby granted, free of charge, to any person obtaining a copy
-//  of this software and associated documentation files (the "Software"), to deal
-//  in the Software without restriction, including without limitation the rights
-//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-//  copies of the Software, and to permit persons to whom the Software is
-//  furnished to do so, subject to the following conditions:
-//
-//  The above copyright notice and this permission notice shall be included in
-//  all copies or substantial portions of the Software.
-//
-//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-//  THE SOFTWARE.
-//
-
 import UIKit
 
 extension UIViewController {
-    func addFillerChildViewController(_ childController: UIViewController, toView: UIView? = nil) {
-        addChildViewController(childController)
-        var parentView = childController.view
-        if let toView = toView {
-            parentView = toView
-        }
-        view.addFillerSubview(parentView!)
-        childController.didMove(toParentViewController: self)
+  func addFillerChildViewController(_ childController: UIViewController, toView: UIView? = nil) {
+    addChildViewController(childController)
+    var parentView = childController.view
+    if let toView = toView {
+      parentView = toView
     }
+    view.addFillerSubview(parentView!)
+    childController.didMove(toParentViewController: self)
+  }
+
+  func alert(message: String, title: String) {
+    let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+    let OKAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+    alertController.addAction(OKAction)
+    self.present(alertController, animated: true, completion: nil)
+  }
+
+  func lowMemoryAlert(message: String? = nil, title: String? = nil) {
+
+    let message = "Your device has low memory. Reboot your device ASAP."
+    let title = "Low Memory"
+
+    self.alert(message: message, title: title)
+  }
+
+  func networkConnectionAlert(message: String?, title: String?) {
+
+    let message = "No network connection or the bandwidth is very low. Ensure you have " +
+        "good network connection."
+    let title = "No Network Connection or Low Bandwidth"
+
+
+    self.alert(message: message, title: title)
+  }
+
+  func notImplementedAlert() {
+
+    let message = "This function has not implemented yet."
+    let title = "Not Implemented"
+
+    self.alert(message: message, title: title)
+  }
+
 }

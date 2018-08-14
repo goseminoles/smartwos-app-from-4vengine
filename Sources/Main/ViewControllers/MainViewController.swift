@@ -4,6 +4,8 @@
 //
 
 import UIKit
+import Alamofire
+import RxSwift
 
 class MainViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
@@ -25,8 +27,10 @@ class MainViewController: UICollectionViewController, UICollectionViewDelegateFl
     Team(image: "receive", name: "Weight"),
     Team(image: "pick", name: "Pickup"),
     Team(image: "ship", name: "Final Mile"),
-    Team(image: "receive", name: "Weight"),
+    Team(image: "receive", name: "Transfer"),
   ]
+
+  let disposeBag = DisposeBag()
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -104,21 +108,28 @@ class MainViewController: UICollectionViewController, UICollectionViewDelegateFl
 
   func launchStory(for storyName: String) -> Bool {
 
-//    // TODO: delete the following statement
-//    print("Got clicked on cell name: \(operationName)!")
-//
-//    let usersRouter = UsersRouter(parentViewController: self)
-//    usersRouter.showInitial()
-//    mainRouter = usersRouter
 
+    // TODO: delete
+    let service = LabelService()
+    service
+        .getLabelItems(for: "920510001")
+        .subscribe(
+            onNext: { [weak self] items in
+              guard items.count > 0 else {
+                self?.alert(message: "no items fetched", title: "Fetching Items Alert")
+                return
+              }
 
-    let alert = UIAlertController(title: "囧", message: "This story has NOT implement yet^_^",
-        preferredStyle: .alert)
-    alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Will Do Soon"), style:
-    .default, handler: { _ in
-      NSLog("TODO: implement \(storyName)")
-    }))
-    self.present(alert, animated: true, completion: nil)
+              print("items: ")
+              print("items \(items)")
+            },
+            onError: { [weak self] error in
+              self?.alert(message: "Error no items fetched", title: "Error Alert")
+
+            }
+        )
+        .disposed(by: disposeBag)
+
     return true
   }
 
