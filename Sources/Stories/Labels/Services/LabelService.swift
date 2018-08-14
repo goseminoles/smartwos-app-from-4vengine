@@ -3,6 +3,8 @@ import Alamofire
 import RxSwift
 
 struct LabelService {
+  typealias LabelItem = Models.LabelItem
+
   enum GetLabelItemsFailureReason: Int, Error {
     case unAuthorized = 401
     case notFound = 404

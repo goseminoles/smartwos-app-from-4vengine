@@ -34,10 +34,10 @@
 		D1F8A54AD57010954E87800A /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A3E8A832594066AA3DED /* Config.swift */; };
 		D1F8A5D9A9DCA33941FED802 /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8AFAECFFF15E54D65D5EB /* RestClient.swift */; };
 		D1F8A77A216CECC927864D90 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A044E62D5618B6C594F1 /* HTTPClient.swift */; };
+		D1F8A8BA441439F50FB7783A /* LabelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8AD65A26E556381CFD23E /* LabelItem.swift */; };
 		D1F8A93C6A08FF1EAD1F8577 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A5621EA1479C9AFFDDF7 /* MainViewController.swift */; };
 		D1F8A97059A29E215E0BB345 /* UIViewExtresion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A2413AC98CC3ABD2D6E4 /* UIViewExtresion.swift */; };
 		D1F8A978F041841CE286BD72 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8AC8063DA6EF92D29DF38 /* Models.swift */; };
-		D1F8AEBEFD511E1517DDBD9A /* LabelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A7920B3A52A6FBD539BF /* LabelItem.swift */; };
 		D1F8AED95ED401C16E670C54 /* LabelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8AA30ED5FE38E010023ED /* LabelService.swift */; };
 /* End PBXBuildFile section */
 
@@ -73,9 +73,9 @@
 		D1F8A2413AC98CC3ABD2D6E4 /* UIViewExtresion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtresion.swift; sourceTree = "<group>"; };
 		D1F8A3E8A832594066AA3DED /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		D1F8A5621EA1479C9AFFDDF7 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		D1F8A7920B3A52A6FBD539BF /* LabelItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelItem.swift; sourceTree = "<group>"; };
 		D1F8AA30ED5FE38E010023ED /* LabelService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelService.swift; sourceTree = "<group>"; };
 		D1F8AC8063DA6EF92D29DF38 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		D1F8AD65A26E556381CFD23E /* LabelItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelItem.swift; sourceTree = "<group>"; };
 		D1F8AFAECFFF15E54D65D5EB /* RestClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestClient.swift; sourceTree = "<group>"; };
 		EBB73F0BC33BE0431F02396C /* Pods-smartwos-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartwos-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smartwos-app/Pods-smartwos-app.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -244,6 +244,7 @@
 			children = (
 				A0868AE41F4D88F3002B1D24 /* User.swift */,
 				D1F8AC8063DA6EF92D29DF38 /* Models.swift */,
+				D1F8AD65A26E556381CFD23E /* LabelItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -373,7 +374,6 @@
 		D1F8AD5C2C4F775AE52B1D74 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D1F8A7920B3A52A6FBD539BF /* LabelItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -531,8 +531,8 @@
 				D1F8A97059A29E215E0BB345 /* UIViewExtresion.swift in Sources */,
 				D1F8A54AD57010954E87800A /* Config.swift in Sources */,
 				D1F8A5D9A9DCA33941FED802 /* RestClient.swift in Sources */,
-				D1F8AEBEFD511E1517DDBD9A /* LabelItem.swift in Sources */,
 				D1F8AED95ED401C16E670C54 /* LabelService.swift in Sources */,
+				D1F8A8BA441439F50FB7783A /* LabelItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
