@@ -19,6 +19,9 @@ class MainViewController: UICollectionViewController, UICollectionViewDelegateFl
     Team(image: "quantity-check", name: "Quality Check"),
     Team(image: "receive", name: "Pack"),
     Team(image: "ship", name: "Weight"),
+    Team(image: "ship", name: "Final Mile"),
+    Team(image: "receive", name: "Weight"),
+    Team(image: "pick", name: "Pickup"),
   ]
 
   override func viewDidLoad() {
@@ -40,7 +43,7 @@ class MainViewController: UICollectionViewController, UICollectionViewDelegateFl
 
     navigationController?.navigationBar.titleTextAttributes = [
       NSForegroundColorAttributeName: UIColor.white,
-      NSFontAttributeName: UIFont.boldSystemFont(ofSize: 20)]
+      NSFontAttributeName: UIFont.boldSystemFont(ofSize: 28)]
 
 
     collectionView?.register(TeamCell.self, forCellWithReuseIdentifier: cellId)
@@ -76,7 +79,7 @@ class MainViewController: UICollectionViewController, UICollectionViewDelegateFl
   }
 
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-    return CGSize(width: (view.frame.width / 3) - 16, height: 100)
+    return CGSize(width: 160, height: 160)
   }
 
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
@@ -139,8 +142,8 @@ class TeamCell: UICollectionViewCell {
     teamImageView.anchor(top: topAnchor, left: leftAnchor,
         bottom: nil, right: rightAnchor,
         paddingTop: 10, paddingLeft: 10,
-        paddingBottom: 0, paddingRight: 10,
-        width: 0, height: 50)
+        paddingBottom: 10, paddingRight: 10,
+        width: 0, height: 120)
 
     teamLabel.anchor(top: teamImageView.bottomAnchor, left: leftAnchor,
         bottom: bottomAnchor, right: rightAnchor,
@@ -165,7 +168,7 @@ class TeamCell: UICollectionViewCell {
     let label = UILabel()
     label.text = "name"
     label.textColor = .white
-    label.font = UIFont.boldSystemFont(ofSize: 16)
+    label.font = UIFont.boldSystemFont(ofSize: 24)
     label.textAlignment = .center
     return label
   }()
