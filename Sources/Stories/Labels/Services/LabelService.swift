@@ -2,7 +2,7 @@ import Foundation
 import Alamofire
 import RxSwift
 
-struct LabelService {
+class LabelService {
   typealias LabelItem = Models.LabelItem
 
   enum GetLabelItemsFailureReason: Int, Error {
@@ -11,15 +11,11 @@ struct LabelService {
     case internalServerError = 500
   }
 
+  let client = RestClient.shared
+
   func getLabelItems(for orderId: String) -> Observable<[LabelItem]> {
-    print("starting to fetch items")
     return Observable.create { observer -> Disposable in
-      Alamofire.request(
-              self.makeEndpoint(path: "mocked/labels/items", for: orderId),
-              method: .get,
-              parameters: nil,
-              encoding: URLEncoding.default,
-              headers: RestClientConfig.getHeaders())
+      self.client.get(path: "mocked/labels/items/\(orderId)", parameters: nil)
           .responseJSON { response in
             switch response.result {
             case .success:
@@ -28,6 +24,8 @@ struct LabelService {
                   observer.onError(response.error ?? GetLabelItemsFailureReason.notFound)
                   return
                 }
+
+                print("\(response)")
 
                 let jsonDecoder = JSONDecoder()
                 jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
@@ -49,7 +47,4 @@ struct LabelService {
     }
   }
 
-  func makeEndpoint(path: String, for orderId: String) -> URLConvertible {
-    return "\(RestClientConfig.getBaseUrl())/\(path)/\(orderId)"
-  }
 }

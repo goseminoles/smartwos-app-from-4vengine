@@ -31,14 +31,17 @@
 		A0868AF61F4D939C002B1D24 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0868AF41F4D939C002B1D24 /* UserDetailsViewController.swift */; };
 		A0868AF71F4D939C002B1D24 /* UserDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0868AF51F4D939C002B1D24 /* UserDetailsViewController.xib */; };
 		A9E42D811F4E1FEB00E0DAF5 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E42D801F4E1FEB00E0DAF5 /* Router.swift */; };
-		D1F8A14CBCDEBE5C657F50A3 /* RestClientConfigExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A2C41598B324C9602589 /* RestClientConfigExample.swift */; };
-		D1F8A289082425906B957297 /* RestClientConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8AA3B35467EAABCC53B69 /* RestClientConfig.swift */; };
-		D1F8A5D9A9DCA33941FED802 /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8AFAECFFF15E54D65D5EB /* RestClient.swift */; };
+		D1F8A06D5ACBA222ECC3D656 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D1F8A169CC2E13E9D8A5AF75 /* .gitignore */; };
+		D1F8A6D85DB5C3A7E544224F /* ConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A3882FAF423F9A2A574F /* ConfigManager.swift */; };
+		D1F8A7082B5CE8EB77CB8674 /* Config.Example.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1F8A1016CF16498F2813002 /* Config.Example.plist */; };
 		D1F8A77A216CECC927864D90 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A044E62D5618B6C594F1 /* HTTPClient.swift */; };
+		D1F8A803B1E1E59803BA9FF3 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A8392F92C948FA1CC1A7 /* Config.swift */; };
 		D1F8A8BA441439F50FB7783A /* LabelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8AD65A26E556381CFD23E /* LabelItem.swift */; };
 		D1F8A93C6A08FF1EAD1F8577 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A5621EA1479C9AFFDDF7 /* MainViewController.swift */; };
 		D1F8A97059A29E215E0BB345 /* UIViewExtresion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A2413AC98CC3ABD2D6E4 /* UIViewExtresion.swift */; };
 		D1F8A978F041841CE286BD72 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8AC8063DA6EF92D29DF38 /* Models.swift */; };
+		D1F8A9E76D6A629D05C1F4AE /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1F8A74C16B2178D8A2CCF86 /* Config.plist */; };
+		D1F8AE38E699DC9FB80C7B3D /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A5D196A223A7DD55B30D /* RestClient.swift */; };
 		D1F8AED95ED401C16E670C54 /* LabelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8AA30ED5FE38E010023ED /* LabelService.swift */; };
 /* End PBXBuildFile section */
 
@@ -71,14 +74,17 @@
 		A0868AF51F4D939C002B1D24 /* UserDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserDetailsViewController.xib; sourceTree = "<group>"; };
 		A9E42D801F4E1FEB00E0DAF5 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		D1F8A044E62D5618B6C594F1 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		D1F8A1016CF16498F2813002 /* Config.Example.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Config.Example.plist; sourceTree = "<group>"; };
+		D1F8A169CC2E13E9D8A5AF75 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
 		D1F8A2413AC98CC3ABD2D6E4 /* UIViewExtresion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtresion.swift; sourceTree = "<group>"; };
-		D1F8A2C41598B324C9602589 /* RestClientConfigExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestClientConfigExample.swift; sourceTree = "<group>"; };
+		D1F8A3882FAF423F9A2A574F /* ConfigManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigManager.swift; sourceTree = "<group>"; };
 		D1F8A5621EA1479C9AFFDDF7 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D1F8A5D196A223A7DD55B30D /* RestClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestClient.swift; path = Sources/Config/RestClient.swift; sourceTree = SOURCE_ROOT; };
+		D1F8A74C16B2178D8A2CCF86 /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Config.plist; sourceTree = "<group>"; };
+		D1F8A8392F92C948FA1CC1A7 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		D1F8AA30ED5FE38E010023ED /* LabelService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelService.swift; sourceTree = "<group>"; };
-		D1F8AA3B35467EAABCC53B69 /* RestClientConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestClientConfig.swift; sourceTree = "<group>"; };
 		D1F8AC8063DA6EF92D29DF38 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		D1F8AD65A26E556381CFD23E /* LabelItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelItem.swift; sourceTree = "<group>"; };
-		D1F8AFAECFFF15E54D65D5EB /* RestClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestClient.swift; sourceTree = "<group>"; };
 		EBB73F0BC33BE0431F02396C /* Pods-smartwos-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartwos-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smartwos-app/Pods-smartwos-app.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +117,7 @@
 				A0868ABA1F4D6C21002B1D24 /* Supporting Files */,
 				CA3ACF0AA3BAED1363D10970 /* Pods */,
 				09E93A18E8A08A75949700E7 /* Frameworks */,
+				D1F8A169CC2E13E9D8A5AF75 /* .gitignore */,
 			);
 			sourceTree = "<group>";
 		};
@@ -311,8 +318,10 @@
 		D1F8A0AFBE2E05D12FC1F28F /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				D1F8AA3B35467EAABCC53B69 /* RestClientConfig.swift */,
-				D1F8A2C41598B324C9602589 /* RestClientConfigExample.swift */,
+				D1F8A8392F92C948FA1CC1A7 /* Config.swift */,
+				D1F8A3882FAF423F9A2A574F /* ConfigManager.swift */,
+				D1F8A74C16B2178D8A2CCF86 /* Config.plist */,
+				D1F8A1016CF16498F2813002 /* Config.Example.plist */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -352,7 +361,7 @@
 			isa = PBXGroup;
 			children = (
 				D1F8A044E62D5618B6C594F1 /* HTTPClient.swift */,
-				D1F8AFAECFFF15E54D65D5EB /* RestClient.swift */,
+				D1F8A5D196A223A7DD55B30D /* RestClient.swift */,
 			);
 			path = Clients;
 			sourceTree = "<group>";
@@ -447,6 +456,9 @@
 				A0868AB91F4D6BF6002B1D24 /* Assets.xcassets in Resources */,
 				A0868AD21F4D7244002B1D24 /* UsersListTableViewController.xib in Resources */,
 				A0868ABE1F4D6C21002B1D24 /* LaunchScreen.storyboard in Resources */,
+				D1F8A06D5ACBA222ECC3D656 /* .gitignore in Resources */,
+				D1F8A9E76D6A629D05C1F4AE /* Config.plist in Resources */,
+				D1F8A7082B5CE8EB77CB8674 /* Config.Example.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,11 +544,11 @@
 				D1F8A77A216CECC927864D90 /* HTTPClient.swift in Sources */,
 				D1F8A93C6A08FF1EAD1F8577 /* MainViewController.swift in Sources */,
 				D1F8A97059A29E215E0BB345 /* UIViewExtresion.swift in Sources */,
-				D1F8A5D9A9DCA33941FED802 /* RestClient.swift in Sources */,
 				D1F8AED95ED401C16E670C54 /* LabelService.swift in Sources */,
 				D1F8A8BA441439F50FB7783A /* LabelItem.swift in Sources */,
-				D1F8A289082425906B957297 /* RestClientConfig.swift in Sources */,
-				D1F8A14CBCDEBE5C657F50A3 /* RestClientConfigExample.swift in Sources */,
+				D1F8A803B1E1E59803BA9FF3 /* Config.swift in Sources */,
+				D1F8A6D85DB5C3A7E544224F /* ConfigManager.swift in Sources */,
+				D1F8AE38E699DC9FB80C7B3D /* RestClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
