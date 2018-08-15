@@ -8,6 +8,9 @@
 .DS_Store
 SmartWOS.xcodeproj/project.xcworkspace/xcshareddata/
 
+# config
+Config/RestClientConfig.swift
+
 ## Build generated
 build/
 DerivedData/

@@ -31,7 +31,8 @@
 		A0868AF61F4D939C002B1D24 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0868AF41F4D939C002B1D24 /* UserDetailsViewController.swift */; };
 		A0868AF71F4D939C002B1D24 /* UserDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0868AF51F4D939C002B1D24 /* UserDetailsViewController.xib */; };
 		A9E42D811F4E1FEB00E0DAF5 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E42D801F4E1FEB00E0DAF5 /* Router.swift */; };
-		D1F8A54AD57010954E87800A /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A3E8A832594066AA3DED /* Config.swift */; };
+		D1F8A14CBCDEBE5C657F50A3 /* RestClientConfigExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A2C41598B324C9602589 /* RestClientConfigExample.swift */; };
+		D1F8A289082425906B957297 /* RestClientConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8AA3B35467EAABCC53B69 /* RestClientConfig.swift */; };
 		D1F8A5D9A9DCA33941FED802 /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8AFAECFFF15E54D65D5EB /* RestClient.swift */; };
 		D1F8A77A216CECC927864D90 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A044E62D5618B6C594F1 /* HTTPClient.swift */; };
 		D1F8A8BA441439F50FB7783A /* LabelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8AD65A26E556381CFD23E /* LabelItem.swift */; };
@@ -71,9 +72,10 @@
 		A9E42D801F4E1FEB00E0DAF5 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		D1F8A044E62D5618B6C594F1 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		D1F8A2413AC98CC3ABD2D6E4 /* UIViewExtresion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtresion.swift; sourceTree = "<group>"; };
-		D1F8A3E8A832594066AA3DED /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		D1F8A2C41598B324C9602589 /* RestClientConfigExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestClientConfigExample.swift; sourceTree = "<group>"; };
 		D1F8A5621EA1479C9AFFDDF7 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D1F8AA30ED5FE38E010023ED /* LabelService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelService.swift; sourceTree = "<group>"; };
+		D1F8AA3B35467EAABCC53B69 /* RestClientConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestClientConfig.swift; sourceTree = "<group>"; };
 		D1F8AC8063DA6EF92D29DF38 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		D1F8AD65A26E556381CFD23E /* LabelItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelItem.swift; sourceTree = "<group>"; };
 		D1F8AFAECFFF15E54D65D5EB /* RestClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestClient.swift; sourceTree = "<group>"; };
@@ -131,7 +133,7 @@
 				D1F8A6B0F0104E8FFFBA6C48 /* Clients */,
 				D1F8AB51C4FA51FD9225B05B /* Main */,
 				D1F8A317C6B604CBE55882B8 /* Services */,
-				D1F8A0AFBE2E05D12FC1F28F /* Configs */,
+				D1F8A0AFBE2E05D12FC1F28F /* Config */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -306,12 +308,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		D1F8A0AFBE2E05D12FC1F28F /* Configs */ = {
+		D1F8A0AFBE2E05D12FC1F28F /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				D1F8A3E8A832594066AA3DED /* Config.swift */,
+				D1F8AA3B35467EAABCC53B69 /* RestClientConfig.swift */,
+				D1F8A2C41598B324C9602589 /* RestClientConfigExample.swift */,
 			);
-			path = Configs;
+			path = Config;
 			sourceTree = "<group>";
 		};
 		D1F8A2472C056789CE02A635 /* Services */ = {
@@ -529,10 +532,11 @@
 				D1F8A77A216CECC927864D90 /* HTTPClient.swift in Sources */,
 				D1F8A93C6A08FF1EAD1F8577 /* MainViewController.swift in Sources */,
 				D1F8A97059A29E215E0BB345 /* UIViewExtresion.swift in Sources */,
-				D1F8A54AD57010954E87800A /* Config.swift in Sources */,
 				D1F8A5D9A9DCA33941FED802 /* RestClient.swift in Sources */,
 				D1F8AED95ED401C16E670C54 /* LabelService.swift in Sources */,
 				D1F8A8BA441439F50FB7783A /* LabelItem.swift in Sources */,
+				D1F8A289082425906B957297 /* RestClientConfig.swift in Sources */,
+				D1F8A14CBCDEBE5C657F50A3 /* RestClientConfigExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
