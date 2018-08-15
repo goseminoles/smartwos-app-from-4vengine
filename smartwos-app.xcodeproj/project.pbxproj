@@ -32,15 +32,15 @@
 		A0868AF71F4D939C002B1D24 /* UserDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0868AF51F4D939C002B1D24 /* UserDetailsViewController.xib */; };
 		A9E42D811F4E1FEB00E0DAF5 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E42D801F4E1FEB00E0DAF5 /* Router.swift */; };
 		D1F8A06D5ACBA222ECC3D656 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D1F8A169CC2E13E9D8A5AF75 /* .gitignore */; };
+		D1F8A5D214C332259C65D52D /* Config.Example.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1F8A1587181632CDA01EE61 /* Config.Example.plist */; };
 		D1F8A6D85DB5C3A7E544224F /* ConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A3882FAF423F9A2A574F /* ConfigManager.swift */; };
-		D1F8A7082B5CE8EB77CB8674 /* Config.Example.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1F8A1016CF16498F2813002 /* Config.Example.plist */; };
 		D1F8A77A216CECC927864D90 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A044E62D5618B6C594F1 /* HTTPClient.swift */; };
 		D1F8A803B1E1E59803BA9FF3 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A8392F92C948FA1CC1A7 /* Config.swift */; };
 		D1F8A8BA441439F50FB7783A /* LabelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8AD65A26E556381CFD23E /* LabelItem.swift */; };
 		D1F8A93C6A08FF1EAD1F8577 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A5621EA1479C9AFFDDF7 /* MainViewController.swift */; };
 		D1F8A97059A29E215E0BB345 /* UIViewExtresion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A2413AC98CC3ABD2D6E4 /* UIViewExtresion.swift */; };
 		D1F8A978F041841CE286BD72 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8AC8063DA6EF92D29DF38 /* Models.swift */; };
-		D1F8A9E76D6A629D05C1F4AE /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1F8A74C16B2178D8A2CCF86 /* Config.plist */; };
+		D1F8AD26C7C4B9D9D08E055F /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1F8A31EEF4B2DECE6EED7C4 /* Config.plist */; };
 		D1F8AE38E699DC9FB80C7B3D /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A5D196A223A7DD55B30D /* RestClient.swift */; };
 		D1F8AED95ED401C16E670C54 /* LabelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8AA30ED5FE38E010023ED /* LabelService.swift */; };
 /* End PBXBuildFile section */
@@ -74,13 +74,13 @@
 		A0868AF51F4D939C002B1D24 /* UserDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserDetailsViewController.xib; sourceTree = "<group>"; };
 		A9E42D801F4E1FEB00E0DAF5 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		D1F8A044E62D5618B6C594F1 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
-		D1F8A1016CF16498F2813002 /* Config.Example.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Config.Example.plist; sourceTree = "<group>"; };
+		D1F8A1587181632CDA01EE61 /* Config.Example.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Config.Example.plist; sourceTree = "<group>"; };
 		D1F8A169CC2E13E9D8A5AF75 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
 		D1F8A2413AC98CC3ABD2D6E4 /* UIViewExtresion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtresion.swift; sourceTree = "<group>"; };
+		D1F8A31EEF4B2DECE6EED7C4 /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Config.plist; sourceTree = "<group>"; };
 		D1F8A3882FAF423F9A2A574F /* ConfigManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigManager.swift; sourceTree = "<group>"; };
 		D1F8A5621EA1479C9AFFDDF7 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D1F8A5D196A223A7DD55B30D /* RestClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestClient.swift; path = Sources/Config/RestClient.swift; sourceTree = SOURCE_ROOT; };
-		D1F8A74C16B2178D8A2CCF86 /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Config.plist; sourceTree = "<group>"; };
 		D1F8A8392F92C948FA1CC1A7 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		D1F8AA30ED5FE38E010023ED /* LabelService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelService.swift; sourceTree = "<group>"; };
 		D1F8AC8063DA6EF92D29DF38 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
@@ -118,6 +118,7 @@
 				CA3ACF0AA3BAED1363D10970 /* Pods */,
 				09E93A18E8A08A75949700E7 /* Frameworks */,
 				D1F8A169CC2E13E9D8A5AF75 /* .gitignore */,
+				D1F8AA8BB66C3FDDFA4BD6F5 /* Config */,
 			);
 			sourceTree = "<group>";
 		};
@@ -320,8 +321,6 @@
 			children = (
 				D1F8A8392F92C948FA1CC1A7 /* Config.swift */,
 				D1F8A3882FAF423F9A2A574F /* ConfigManager.swift */,
-				D1F8A74C16B2178D8A2CCF86 /* Config.plist */,
-				D1F8A1016CF16498F2813002 /* Config.Example.plist */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -373,6 +372,15 @@
 				D1F8A2472C056789CE02A635 /* Services */,
 			);
 			path = Labels;
+			sourceTree = "<group>";
+		};
+		D1F8AA8BB66C3FDDFA4BD6F5 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				D1F8A1587181632CDA01EE61 /* Config.Example.plist */,
+				D1F8A31EEF4B2DECE6EED7C4 /* Config.plist */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 		D1F8AB51C4FA51FD9225B05B /* Main */ = {
@@ -457,8 +465,8 @@
 				A0868AD21F4D7244002B1D24 /* UsersListTableViewController.xib in Resources */,
 				A0868ABE1F4D6C21002B1D24 /* LaunchScreen.storyboard in Resources */,
 				D1F8A06D5ACBA222ECC3D656 /* .gitignore in Resources */,
-				D1F8A9E76D6A629D05C1F4AE /* Config.plist in Resources */,
-				D1F8A7082B5CE8EB77CB8674 /* Config.Example.plist in Resources */,
+				D1F8A5D214C332259C65D52D /* Config.Example.plist in Resources */,
+				D1F8AD26C7C4B9D9D08E055F /* Config.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
