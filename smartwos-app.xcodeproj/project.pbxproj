@@ -140,7 +140,6 @@
 				A0868AC11F4D6F29002B1D24 /* Stories */,
 				D1F8A6B0F0104E8FFFBA6C48 /* Clients */,
 				D1F8AB51C4FA51FD9225B05B /* Main */,
-				D1F8A317C6B604CBE55882B8 /* Services */,
 				D1F8A0AFBE2E05D12FC1F28F /* Config */,
 			);
 			path = Sources;
@@ -333,25 +332,10 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		D1F8A317C6B604CBE55882B8 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		D1F8A45E5CC0BDFA8FFF9154 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		D1F8A5CAD53D5119141E9C54 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				D1F8A5621EA1479C9AFFDDF7 /* MainViewController.swift */,
-				D1F8A45E5CC0BDFA8FFF9154 /* Views */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -368,7 +352,6 @@
 		D1F8AA37315D242AB3FC006C /* Labels */ = {
 			isa = PBXGroup;
 			children = (
-				D1F8AD5C2C4F775AE52B1D74 /* Models */,
 				D1F8A2472C056789CE02A635 /* Services */,
 			);
 			path = Labels;
@@ -389,13 +372,6 @@
 				D1F8A5CAD53D5119141E9C54 /* ViewControllers */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		D1F8AD5C2C4F775AE52B1D74 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
