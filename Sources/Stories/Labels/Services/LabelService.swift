@@ -25,8 +25,6 @@ class LabelService {
                   return
                 }
 
-                print("\(response)")
-
                 let jsonDecoder = JSONDecoder()
                 jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
                 let labelItems = try jsonDecoder.decode([LabelItem].self, from: data)
