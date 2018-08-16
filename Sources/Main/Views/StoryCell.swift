@@ -8,19 +8,19 @@ class StoryCell: UICollectionViewCell {
 
   typealias Story = Models.Story
 
-  var team: Story? {
+  var story: Story? {
 
     didSet {
 
-      guard let teamImage = team?.image else {
+      guard let storyImage = story?.image else {
         return
       }
-      guard let teamName = team?.name else {
+      guard let storyName = story?.name else {
         return
       }
 
-      teamImageView.image = UIImage(named: teamImage)
-      teamLabel.text = teamName
+      storyImageView.image = UIImage(named: storyImage)
+      storyLabel.text = storyName
     }
   }
 
@@ -42,16 +42,16 @@ class StoryCell: UICollectionViewCell {
 
   func setup() {
     self.backgroundColor = UIColor(red: 11 / 255, green: 22 / 255, blue: 53 / 255, alpha: 1)
-    self.addSubview(teamImageView)
-    self.addSubview(teamLabel)
+    self.addSubview(storyImageView)
+    self.addSubview(storyLabel)
 
-    teamImageView.anchor(top: topAnchor, left: leftAnchor,
+    storyImageView.anchor(top: topAnchor, left: leftAnchor,
         bottom: nil, right: rightAnchor,
         paddingTop: 10, paddingLeft: 10,
         paddingBottom: 10, paddingRight: 10,
         width: 0, height: 120)
 
-    teamLabel.anchor(top: teamImageView.bottomAnchor, left: leftAnchor,
+    storyLabel.anchor(top: storyImageView.bottomAnchor, left: leftAnchor,
         bottom: bottomAnchor, right: rightAnchor,
         paddingTop: 0, paddingLeft: 0,
         paddingBottom: 0, paddingRight: 0,
@@ -63,14 +63,13 @@ class StoryCell: UICollectionViewCell {
     super.init(coder: aDecoder)
   }
 
-  let teamImageView: UIImageView = {
+  let storyImageView: UIImageView = {
     let imageView = UIImageView()
     imageView.contentMode = .scaleAspectFit
-//    imageView.backgroundColor = .green
     return imageView
   }()
 
-  let teamLabel: UILabel = {
+  let storyLabel: UILabel = {
     let label = UILabel()
     label.text = "name"
     label.textColor = .white

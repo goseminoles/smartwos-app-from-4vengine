@@ -71,7 +71,7 @@ class MainViewController: UICollectionViewController, UICollectionViewDelegateFl
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
         as! StoryCell
 
-    cell.team = teams[indexPath.item]
+    cell.story = teams[indexPath.item]
 
     return cell
   }
